@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap');
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    text-align: right;
+    background-color: #ffffff;
+    color: #2D2D2D;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Naskh Arabic', serif;
+  }
+
+  ::selection {
+    background-color: #D4A843;
+    color: #ffffff;
+  }
+
+  input, textarea, select, button {
+    font-family: 'Cairo', sans-serif;
+  }
+}
+
+@layer components {
+  .container-main {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-20 lg:py-24;
+  }
+
+  .gradient-primary {
+    @apply bg-gradient-to-br from-[#1B3A5C] to-[#0F2440];
+  }
+
+  .gradient-gold {
+    @apply bg-gradient-to-r from-[#D4A843] to-[#E8C76A];
+  }
+
+  .text-gradient-gold {
+    @apply bg-gradient-to-r from-[#D4A843] to-[#E8C76A] bg-clip-text text-transparent;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+
+  .badge-pill {
+    @apply inline-flex items-center rounded-full px-4 py-1.5 text-sm font-medium;
+  }
+
+  .whatsapp-btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-6 py-3 font-semibold text-white transition-all duration-300 hover:bg-[#20BD5A] hover:shadow-lg hover:shadow-[#25D366]/30;
+  }
+
+  .gold-btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border-2 border-[#D4A843] px-6 py-3 font-semibold text-[#D4A843] transition-all duration-300 hover:bg-[#D4A843] hover:text-white;
+  }
+
+  .section-bg-light {
+    @apply bg-[#E8F0F8];
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #D4A843 !important;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #D4A843 !important;
+  }
+}
+
+@layer utilities {
+  .rtl {
+    direction: rtl;
+  }
+
+  .ltr {
+    direction: ltr;
+  }
+}
