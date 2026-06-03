@@ -70,9 +70,9 @@ export const COURSES = [
     fullTitle: 'A1 – دورة A1 للمبتدئين',
     description: 'انطلق من الصفر في تعلم اللغة الألمانية. أساسيات المحادثة، القواعد، والمفردات اليومية.',
     duration: '8 أسابيع',
+    schedule: 'الحصص: 3 مرات في الأسبوع • حضوري أو عن بُعد',
     features: ['المحادثة', 'القواعد', 'المفردات'],
-    isActive: true,
-    order: 1,
+    popular: false,
   },
   {
     level: 'A2',
@@ -80,9 +80,9 @@ export const COURSES = [
     fullTitle: 'A2 – دورة A2 الأساسية',
     description: 'طور مهاراتك في اللغة الألمانية مع تركيز على المحادثة والتطبيق العملي.',
     duration: '8 أسابيع',
+    schedule: 'الحصص: 3 مرات في الأسبوع • حضوري أو عن بُعد',
     features: ['المحادثة', 'القواعد', 'المفردات', 'الاستماع'],
-    isActive: true,
-    order: 2,
+    popular: false,
   },
   {
     level: 'B1',
@@ -90,9 +90,9 @@ export const COURSES = [
     fullTitle: 'B1 – دورة B1 المتوسطة',
     description: 'مستوى متوسط يمكنك من التواصل بطلاقة في مواقف الحياة اليومية والعمل.',
     duration: '8 أسابيع',
+    schedule: 'الحصص: 3 مرات في الأسبوع • حضوري أو عن بُعد',
     features: ['المحادثة', 'القواعد', 'الكتابة', 'الاستماع', 'القراءة'],
-    isActive: true,
-    order: 3,
+    popular: true,
   },
   {
     level: 'B2',
@@ -100,9 +100,9 @@ export const COURSES = [
     fullTitle: 'B2 – دورة B2 المتقدمة',
     description: 'مستوى متقدم يؤهلك للدراسة الجامعية أو العمل المهني في ألمانيا.',
     duration: '8 أسابيع',
+    schedule: 'الحصص: 3 مرات في الأسبوع • حضوري أو عن بُعد',
     features: ['محادثة متقدمة', 'كتابة رسمية', 'فهم النصوص', 'تحضير للامتحان'],
-    isActive: true,
-    order: 4,
+    popular: false,
   },
 ];
 
